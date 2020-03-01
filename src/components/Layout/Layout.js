@@ -1,16 +1,21 @@
 import React from "react";
 import Aux from '../../hoc/Aux';
 import classes from './Layout.module.css';
-
+import BuildControls from '../MilkTea/Controls/BuildControls';
 
 const layout = (props) => (
     <Aux>
         <div >Toolbar, SideDrawer, Backdrop</div>
-        <main className = {classes.cup} >
-            {props.children}
-            <div className={classes.handle}/>
-            
-        </main>
+        {/* <div className= {classes.layout}>    */}
+        <div > 
+            <BuildControls />     
+            <main className = {classes.cup} >
+                
+                <div className={classes.handle}/>
+                {props.children}
+            </main>
+        </div>
+        
     </Aux>
 );
 

@@ -21,16 +21,16 @@ import { render } from 'react-dom';
                     <div className= {classes.cloud2}/>
                 </div>;
                 break;
-            case ("jam-top"):
+            case ("jamtop"):
                 ingredient = <div className={classes.jamTop}></div>;
                 break;
-            case ('green-tea'):
+            case ('greentea'):
                 ingredient = <div className = {classes.greenTea}></div>;
                 break;
-            case ('red-tea'):
+            case ('redtea'):
                 ingredient = <div className = {classes.redTea}></div>;
                 break;
-            case ('oolong-tea'):
+            case ('oolongtea'):
                 ingredient = <div className = {classes.oolongTea}></div>;
                 break;
             case ('redBean'):

@@ -1,13 +1,20 @@
-
+.layout {
+    /* flex-flow: row; */
+    -webkit-columns:200px 2;
+}
 .cup {
     width: 240px;
     height: 360px;
+    top: 150px;
     background-color:blanchedalmond;
     margin-left: auto;
     margin-right: auto;
     position: relative;
     margin-top: 250px;
     box-shadow: 0px 0px 180px gray inset;
+   
+    /* -webkit-columns:200px 2; */
+    /* flex-flow: row; */
 }
 
 

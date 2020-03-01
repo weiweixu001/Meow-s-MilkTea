@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './MilkTea';
 import Ingredients from './Ingredients/Ingredients'
 
+
 const MilkTea = (props) => {
     const transformedIngredients = Object.keys(props.ingredients)
         .map(igKey=>{
@@ -9,7 +10,13 @@ const MilkTea = (props) => {
                 return  <Ingredients key={igKey+i} type={igKey}/>;
             });
 
-        });
+        })
+        .reduce((arr, el) => {
+            return arr.concat(el)
+        }, []);
+        if (transformedIngredients.length === 0) {
+            console.log('Please start adding ingredients')
+        }
     return (
         <div className = {classes.MilkTea}>
            

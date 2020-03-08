@@ -3,6 +3,8 @@ import Aux from '../../hoc/Aux';
 import MilkTea from '../../components/MilkTea/MilkTea';
 import BuildControls from '../../components/MilkTea/Controls/BuildControls';
 import classes from './MilkTeaBuilder.module.css';
+import Modal from '../../components/UI/Modal/Modal';
+import OrderSummary from '../../components/MilkTea/OrderSummary/OrderSummary';
 
 const INGREDIENT_PRICES = {
     greentea: 0,
@@ -43,11 +45,22 @@ class MilkTeaBuilder extends Component{
 
 
     }
+    
 
     removeIngredientHandler = (type) =>{
 
     }
 
+    purchaseHandler=()=>{
+        this.setState({purchasing:true});
+    }
+    purchaseCancelHandler= () => {
+        this.setState({purchasing: false});
+    }
+
+    purchaseContinueHandler =()=>{
+        alert('you continue!');
+    }
     render(){
         const disabledInfo = {
             ...this.state.ingredients
@@ -58,12 +71,18 @@ class MilkTeaBuilder extends Component{
         return(          
             <Aux className={classes.double}>        
                 
-                
+                <Modal show={this.state.purchasing} modalClosed={this.purchaseCancelHandler} >
+                    <OrderSummary ingredients = {this.state.ingredients}
+                    price={this.state.totalPrice}
+                    purchaseCancelled={this.purchaseCancelHandler}
+                    purchaseContinued={this.purchaseContinueHandler}/>
+                </Modal>
                 <MilkTea ingredients= {this.state.ingredients}/>
                 <BuildControls 
                 ingredientAdded={this.addIngredientHandler}
                 //ingredientRemoved={this.removeIngredientsHandler}
                // disabled={this.props.disabled[ClientRectList.type]}
+                ordered = {this.purchaseHandler}
                 price={this.state.totalPrice}
                 />
                 

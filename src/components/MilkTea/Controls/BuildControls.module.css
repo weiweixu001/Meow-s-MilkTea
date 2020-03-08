@@ -7,8 +7,14 @@
     flex-flow: column;
     margin-left: center;
     box-shadow: 0 2px 1px #ccc;
-     margin: auto; 
+    margin: auto; 
     padding:  10px 10px;
     
     /* -webkit-columns:200px 2; */
+}
+.orderButton {
+    background-color: lawngreen;
+}
+.orderButton:hover {
+    background-color: rgb(196, 188, 209);
 }

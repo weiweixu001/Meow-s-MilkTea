@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './MilkTea';
+import classes from './MilkTea.module.css';
 import Ingredients from './Ingredients/Ingredients'
 
 

@@ -23,6 +23,9 @@ const buildControls = (props) => (
                 added={() =>props.ingredientAdded(ctrl.type)}/>
                 // added={() =>props.ingredientAdded(ctrl.type)}/>
         ))}
+        <button 
+            className={classes.orderButton}
+            onClick={props.ordered}>Order Now</button>
         
     </div>
 );

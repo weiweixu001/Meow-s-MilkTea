@@ -1,0 +1,12 @@
+.Button {
+    color: darkgreen;
+
+}
+/* <element class='Success'> */
+.Success {
+    color: #5c9218;
+
+}
+.Danger {
+    color: #944317;
+}

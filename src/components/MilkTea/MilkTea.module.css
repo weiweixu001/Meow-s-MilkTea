@@ -7,7 +7,7 @@
     font-size: 1.2rem;
     font-weight: bold;
     -webkit-columns:200px 2;
-    flex-flow: column;
+    
     
 }
 @media (min-width: 1000px) and (min-height: 700px) {

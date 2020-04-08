@@ -4,13 +4,14 @@ import BuildControl from './BuildControl/BuildControl';
 
 const controls = [
     
-    {label: "Foamtop", type:'foamtop'},
+    
     {label: "Green tea", type:'greentea'},
     {label: "Red tea", type:'redtea'},
     {label: "Oolong tea", type:'oolongtea'},
+    {label: "Foamtop", type:'foamtop'},
     {label: "Pearl", type:'pearl'},
     {label: "RedBean", type:'redBean'},
-    {label: "Pudding", type:'pudding'},
+    {label: "Mango Pudding", type:'pudding'},
     {label: "Ice", type:'ice'},
 ];
 const buildControls = (props) => (

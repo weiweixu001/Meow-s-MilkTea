@@ -36,18 +36,24 @@ import { render } from 'react-dom';
             case ('redBean'):
                 ingredient = <div>
                     <div className = {classes.redBean}></div>
-                    <div className = {classes.redBean}></div>
-                    <div className = {classes.redBean}></div>
                 </div>;
                 break;
             case ('pearl'):
-                ingredient = <div className = {classes.pearl}></div>;
+                ingredient = <div>
+                        <div className = {classes.pearl1}></div>
+                        <div className = {classes.pearl2}></div>
+                        <div className = {classes.pearl3}></div>
+                    </div>;
                 break;
             case ('pudding'):
-                ingredient = <div className = {classes.pudding}>pudding</div>;
+                ingredient = <div className = {classes.Pudding}></div>;
                 break;
             case ('ice'):
-                ingredient = <div className = {classes.ice}></div>;
+                ingredient = <div>
+                        <div className = {classes.ice}></div>
+                        <div className = {classes.ice2}></div>
+                        <div className = {classes.ice3}></div>
+                    </div>;
                 break;
             default:
                 ingredient = null;

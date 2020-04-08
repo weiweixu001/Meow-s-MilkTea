@@ -15,11 +15,15 @@ const layout = (props) => (
             <SideDrawer />
             <div className={classes.layout}>
                 {/* <BuildControls /> */}
-                <main className = {classes.cup} >
-                    
-                    <div className={classes.handle}/>
-                    {/* {props.children} */}                  
-                </main>
+                {/* <div className={classes.lay}>
+                    <main className = {classes.cup} >  
+                                              
+                        <div className={classes.handle}/>
+                                      
+                    </main>
+
+                </div> */}
+                
                 <div className={classes.lay}>
                     {props.children }
 

@@ -1,15 +1,74 @@
 .MilkTea {
     width: 100%;
     margin: auto;
-    height: 250px;
-    overflow: scroll;
+    height: 650px;
+    /* overflow: scroll; */
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
-    -webkit-columns:200px 2;
-    
-    
+    z-index: 1;
+    margin-top: -30px;
+
+
 }
+.cup {
+    width: 240px;
+    height: 360px;
+    /* top: 10%; */
+    background-color:blanchedalmond;
+    margin-left: 30%;  
+    position: relative;
+    margin-top:0;
+    box-shadow: 0px 0px 180px gray inset;
+    z-index: 2;
+   
+    /* -webkit-columns:200px 2; */
+    flex-flow: row;
+}
+
+
+
+.cup::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(240, 175, 175);
+    border-radius: 50%/50%;
+    /* background: linear-gradient(to bottom, #f00, #a00); */
+    background: linear-gradient(to bottom, rgb(235, 177, 177), rgb(238, 191, 191));
+}
+
+.cup::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    height: 60px;
+    background-color: rgb(163, 139, 139);
+    border-radius: 50%/50%;
+    border-bottom: 3px solid red;
+    box-sizing: border-box;
+
+}
+
+.handle {
+    width: 120px;
+    height: 180px;
+    position: absolute;
+    /* background-color: black; */
+    left: -120px;
+    top: 90px;
+    border: 30px solid rgb(128, 114, 114);
+    box-sizing: border-box;
+    border-right: none;
+
+    border-radius: 70px 0px 0px 120px ;
+}
+
 @media (min-width: 1000px) and (min-height: 700px) {
     .MilkTea {
         width: 700px;

@@ -3,6 +3,7 @@ import classes from './MilkTea.module.css';
 import Ingredients from './Ingredients/Ingredients'
 
 
+
 const MilkTea = (props) => {
     const transformedIngredients = Object.keys(props.ingredients)
         .map(igKey=>{
@@ -19,10 +20,16 @@ const MilkTea = (props) => {
         }
     return (
         <div className = {classes.MilkTea}>
-           
-            {transformedIngredients}
-            {/* <Ingredients type = 'redBean' /> */}
+            
+                <main className = {classes.cup} >  
+                                        
+                    <div className={classes.handle}/>
+                    {transformedIngredients}
+                                
+                </main>
+                        
         </div>
+      
     );
 };
 

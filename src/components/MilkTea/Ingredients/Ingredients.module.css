@@ -1,13 +1,22 @@
-
+.greenTea {
+    background: springgreen;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
 .cloud{
     width: 18vmin;       /*根据宽度或高度那个小然后改变*/
     height: 5vmin;
     background: white;
     border-radius: 15vmin;
-    position: absolute;
-    top: -30px;
-    width: 100%;
+    /* position: absolute; */
+    /* top: -30px; */
+    width: 240px;
     height: 60px;
+    margin-left: 0;
+    
+    position: absolute;
+    margin-top:-30px;
     animation: cl0 12s infinite linear;
 
 }
@@ -15,7 +24,7 @@
     width: 18vmin;
     height: 9vmin;
     background:white;
-    position: absolute;
+    position: relative;
     border-radius: 7vmin;
     left: 3vmin;
     top: -4vmin;
@@ -36,7 +45,7 @@
     content: "";
     display: block;
     position: absolute;
-    top: -30px;
+    /* top: -30px; */
     width: 100%;
     height: 60px;
     background-color: rgb(238, 224, 224);
@@ -54,18 +63,166 @@
 }
 
 .redBean {
-    width: 10%;
-    height: 3%;
+    width: 20%;
+    height: 4%;
     position: absolute;
     left: 50px;
-    margin-bottom: 20px;
+    margin-top: 180px;
     background: rgb(190, 89, 89);
     -moz-border-radius: 10px / 5px;
     -webkit-border-radius: 10px / 5px;
-    border-radius: 10px / 5px;
-    
-    
-    
+    border-radius: 20px / 8px; 
+}
+.redBean::before {
+    content: "";
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    left: 200%;
+    margin-top: 20px;
+    background: rgb(190, 89, 89);
+    -moz-border-radius: 10px / 5px;
+    -webkit-border-radius: 10px / 5px;
+    border-radius: 20px / 8px; 
+}
+
+.redBean:after {
+    content:"";
+    width: 100%;
+    height: 140%;
+    position: absolute;
+    left: 50%;
+    margin-top: 100px;
+    background: rgb(190, 89, 89);
+    -moz-border-radius: 10px / 5px;
+    -webkit-border-radius: 10px / 5px;
+    border-radius: 20px / 8px; 
 }
 
 
+.Pudding {
+    width: 8%;
+    height: 15%;
+    position: absolute;
+    background-color: rgb(238, 238, 131);
+    left: 50%;
+    top: 70%;
+    border-radius: 20%;
+    transform: rotate(-20deg);
+    box-shadow: inset -2px -3px #c9c9c9;
+}
+
+.Pudding::after {
+    content: "";
+    width: 160%;
+    height: 120%;
+    position: absolute;
+    background-color: rgb(238, 238, 131);
+    left: -270%;
+    top: -100%;
+    border-radius: 20%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px 2px #c9c9c9;
+  }
+  
+.Pudding::before {
+    content: "";
+    width: 120%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(238, 238, 131);
+    left: 280%;
+    top: -20%;
+    border-radius: 20%;
+    transform: rotate(60deg);
+    box-shadow: inset -1px -3px #c9c9c9;
+  }
+  .ice {
+    position: absolute;
+    background: rgba(241, 238, 238, 0.884);
+    height: 10%;
+    width: 18%;
+    right: 41%;
+    top: 50%;  
+  }
+  .ice2 {
+    position: absolute;
+    background: rgba(241, 238, 238, 0.884);
+    height: 5%;
+    width: 18%;
+    right: 15%;
+    top: 45%;
+    }
+  .ice3 {
+    position: absolute;
+    background: rgba(241, 238, 238, 0.884);
+    height: 5%;
+    width: 20%;
+    left: 25%;
+    top: 35%;
+    }
+
+.pearl1 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(71, 63, 63);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    left: 5%;
+    top: 75%;
+}
+.pearl2 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(71, 63, 63);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    left: 45%;
+    top: 35%;
+}.pearl3 {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: rgb(71, 63, 63);
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    left: 65%;
+    top: 80%;
+}
+  .Seeds2 {
+    width: 10%;
+    height: 15%;
+    position: absolute;
+    background-color: white;
+    left: 64%;
+    top: 50%;
+    border-radius: 40%;
+    transform: rotate(10deg);
+    box-shadow: inset -3px 0 #c9c9c9;
+  }
+  
+  .Seeds2:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    left: 150%;
+    top: -130%;
+    border-radius: 40%;
+    transform: rotate(90deg);
+    box-shadow: inset 1px 3px #c9c9c9;
+  }
+  
+
+@media (min-width: 1000px) and (min-height: 700px) {
+    .MilkTea {
+        width: 700px;
+        height: 600px;
+    }
+}

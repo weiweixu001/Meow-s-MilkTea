@@ -17,6 +17,9 @@ const orderSummary =(props) =>{
             <h3>Your Order</h3>
             <p>A cup of delicious Milk Tea with following ingredients:</p>
             <ul>
+                <li>
+                    <span style ={{textTransform:'capitalize'}}>Tea</span> : {props.tea}
+                </li>
                 {ingredientSummary}
             </ul>
             <p><strong>Total Price: {props.price}</strong></p>

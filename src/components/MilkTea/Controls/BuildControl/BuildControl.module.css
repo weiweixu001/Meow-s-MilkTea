@@ -5,6 +5,11 @@
     margin: 5px 0;
     
 }
+.type {
+    text-align: left;
+    width: 80px;
+    
+}
 
 .BuildControl button {
     display: block;
@@ -16,4 +21,8 @@
     cursor: pointer;
     outline: none;
 
+}
+
+.BuildControl button:hover {
+    background-color: rgb(196, 188, 209);
 }
